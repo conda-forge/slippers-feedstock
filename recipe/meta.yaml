@@ -1,5 +1,5 @@
 {% set name = "slippers" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/slippers-{{ version }}.tar.gz
-  sha256: 8396cc93bf2050894ca773e5351f08b77f4ece49504e852e1e27f84e77a8b3e9
+  sha256: 290a0e4d160ab8eed4d753dd29ce0474a11bfca72864b7558042e2e0fcb4aec8
 
 build:
   number: 0
