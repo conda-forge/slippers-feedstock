@@ -1,11 +1,11 @@
-About slippers
-==============
+About slippers-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/slippers-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mitchel.me/slippers/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/slippers-feedstock/blob/main/LICENSE.txt)
 
 Summary: Build reusable components in Django without writing a single line of Python.
 
