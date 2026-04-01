@@ -1,0 +1,51 @@
+schema_version: 1
+
+context:
+  name: slippers
+  version: "0.6.3"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/slippers-${{ version }}.tar.gz
+  sha256: 8602f462da79b707d25ec050fb51b6cbe5fb225b3c7faf40d1f02876d970e9f0
+
+build:
+  number: 0
+  noarch: python
+  script:
+    - ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - uv-build >=0.10.12,<0.11.0
+    - python ${{ python_min }}.*
+  run:
+    - django >=3.2
+    - python >=${{ python_min }}
+    - pyyaml >=5.4.0
+    - typeguard >=2.13.3,<3.0.0
+    - typing_extensions >=4.4.0
+
+tests:
+  - python:
+      imports:
+        - slippers
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Build reusable components in Django without writing a single line of Python.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://mitchel.me/slippers/
+  repository: https://github.com/mixxorz/slippers
+
+extra:
+  recipe-maintainers:
+    - thewchan
