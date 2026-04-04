@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: slippers
-  version: "0.6.3"
+  version: "0.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/slippers-${{ version }}.tar.gz
-  sha256: 8602f462da79b707d25ec050fb51b6cbe5fb225b3c7faf40d1f02876d970e9f0
+  sha256: 35059d4025845a46e252633a16a04136f21b28469dee7c4a2a361e00aee5335e
 
 build:
   number: 0
