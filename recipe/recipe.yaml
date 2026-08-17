@@ -27,7 +27,7 @@ requirements:
     - django >=3.2
     - python >=${{ python_min }}
     - pyyaml >=5.4.0
-    - typeguard >=2.13.3,<3.0.0
+    - typeguard >=2.13.3,<3
     - typing_extensions >=4.4.0
 
 tests:
